@@ -7,7 +7,7 @@ const FooterTab = Footer.map((item) => (
   <div
     className={classNames(
       classes.footer__box,
-      classes`${footer__box--} ${item.box}`
+      classes[`footer__box--${item.box}`]
     )}
   >
     <h2>{item.title}</h2>
