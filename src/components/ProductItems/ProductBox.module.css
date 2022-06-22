@@ -1,0 +1,114 @@
+.container {
+    max-width: 1130px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.future > h2 {
+    margin: 0 auto;
+    font-family: Lato;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+    text-align: center;
+}
+.future > p {
+    margin: 6px auto;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9f9f9f;
+    text-align: center;
+}
+
+.product {
+    margin-top: 25px;
+    display: grid;
+    gap: 20px;
+    height: 50%;
+    grid-template-areas: "A A A ";
+    justify-content: center;
+}
+.product__box {
+    width: 360px;
+    height: 581px;
+    background: #f8f8f8;
+    box-sizing: border-box;
+}
+.product__box h2 {
+    margin-left: 18px;
+    margin-top: 25px;
+    font-family: Lato;
+    font-size: 13px;
+    line-height: 16px;
+}
+.product__box p {
+    margin-top: 12px;
+    margin-right: 28px;
+    margin-left: 18px;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5d5d5d;
+}
+.product__box span {
+    display: block;
+    margin-top: 18px;
+    margin-left: 18px;
+    font-family: Lato;
+    color: #f16d7f;
+}
+.item {
+    position: relative;
+    background: rgba(58, 56, 56, 0.86);
+    background-size: contain;
+}
+.item img {
+    display: block;
+}
+.item a {
+    opacity: 0;
+    font-family: Lato;
+    color: #ffffff;
+    top: 188px;
+    left: 111px;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    padding: 12px 0 12px 50px;
+    position: absolute;
+    text-decoration: none;
+    width: 138px;
+    height: 43px;
+    font-size: 14px;
+    line-height: 17px;
+}
+.item a::before {
+    position: absolute;
+    content: url(../../../public/img/Cart.svg);
+    left: 13px;
+    top: 10px;
+}
+.item:hover img {
+    opacity: 0.4;
+}
+.item:hover a {
+    opacity: 1;
+}
+.browse {
+    margin-top: 45px;
+    text-align: center;
+    transition: 2s;
+}
+.browse:hover {
+    transform: rotateX(360deg);
+}
+.browse a {
+    text-decoration: none;
+    color: #f16d7f;
+    padding: 14px 38px;
+    background: white;
+    border: 1px solid #f16d7f;
+}
+.browse a:hover {
+    background: #f16d7f;
+    color: #ffffff;
+}
