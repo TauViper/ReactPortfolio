@@ -1,0 +1,169 @@
+details summary {
+    display: block;
+    cursor: pointer;
+}
+details summary ::-webkit-details-marker {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1130px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.header {
+    background-color: black;
+    padding: 19px 0;
+}
+.header .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .heading .logo {
+    transition: all 2s 0s ease;
+}
+.header .heading .logo:hover {
+    transform: rotateY(380deg);
+}
+.header .heading .left {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .heading .left .search {
+    position: absolute;
+    left: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .heading .left .search > label {
+    z-index: 1;
+}
+.header .heading .left .search > label > svg {
+    fill: black;
+}
+.header .heading .left .search > input {
+    width: 40px;
+    height: 39px;
+    margin-left: -32px;
+    z-index: 0;
+    padding: 8px 15px;
+    border-radius: 23px;
+}
+.header .heading .left .search > input::-moz-placeholder {
+    color: #f16d7f;
+}
+.header .heading .left .search > input:-ms-input-placeholder {
+    color: #f16d7f;
+}
+.header .heading .left .search > input::placeholder {
+    color: #f16d7f;
+}
+.header .heading .left .search:hover > label > svg {
+    fill: #f16d7f;
+}
+.header .heading .left .search:hover > input {
+    padding-left: 45px;
+    display: inline-block;
+    width: 150px;
+    transition: 0.3s ease-out;
+}
+.header .heading .left #search:focus,
+.header .heading .left #search:active {
+    outline: none;
+    padding-left: 45px;
+    width: 150px;
+}
+.header .heading .right {
+    display: flex;
+}
+.header .heading .right > a:not(:last-child) {
+    margin-right: 33px;
+}
+.header .heading .right > a:first-child {
+    position: relative;
+}
+.header .heading .menu {
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-right: 33px;
+    z-index: 2;
+    font-size: 14px;
+    line-height: 17px;
+    position: relative;
+}
+.header .heading .hidden {
+    transition: opacity 1s;
+    opacity: 0;
+    position: absolute;
+}
+
+.header .heading .menu__nav {
+    transition: 1s;
+    width: 232px;
+    position: absolute;
+    height: calc(100vh - 80px);
+    background: #ffffff;
+    top: 60px;
+    right: -365px;
+    padding: 20px;
+}
+.header .heading .menu__nav div {
+    position: relative;
+}
+.header .heading .menu__nav div label {
+    position: absolute;
+    right: -13px;
+    top: -13px;
+}
+.header .heading .menu__nav div ul {
+    list-style-type: none;
+}
+.header .heading .menu__nav div h2 {
+    padding-left: 14px;
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: Lato;
+}
+.header .heading .menu__nav div h3 {
+    margin: 13px 0;
+    color: #f16d7f;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: Lato;
+    padding-left: 14px;
+}
+.header .heading .menu__nav div ul > li {
+    padding-left: 34px;
+}
+.header .heading .menu__nav div ul > li:not(:last-child) {
+    margin-bottom: 11px;
+}
+.header .heading .menu__nav div ul > li > a {
+    text-decoration: none;
+}
+@media (max-width: 1182px) {
+    .header .heading .menu__nav {
+        right: -129px;
+        width: 172px;
+        top: 60px;
+    }
+}
